@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Aficher valeur du tableau, Somme et Moyenne des Valeurs
+
+        function afficheSomMoy(monTableau)
+
+        {
+
+
+
+
+        }
+        //_---------------------------------------------------------------------------------------
+        let monTableau = [];
+        var article;
+        article = window.prompt("inserer un article dans le tableau");
+        monTableau.push(article);
+        while (article != 0) {
+            article = window.prompt("inserer un article dans le tableau");
+
+            monTableau.push(article);
+        }
+        var variant = 0;
+        var somme = 0;
+        var nombre = monTableau.length;
+
+        console.log("nbre de poste :" + nombre);
+
+        for (var q = 0; q < nombre; q++) {
+            variant = monTableau[q];
+            somme = parseInt(somme) + parseInt(variant);
+            console.log(monTableau);
+            console.log(variant);
+
+
+        }
+        var moy = somme / (nombre - 1);
+
+        alert("il y a  " + (nombre - 1) + ' valeurs saisies \n la somme est de: ' + somme + '\n' + " et la moyenne est de : " + moy);
+    </script>
+</body>
+
+</html>

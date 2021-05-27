@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        var nbre1 = window.prompt("inserer un premier nombre");
+
+
+
+        var nbre2 = window.prompt("inserer un second nombre");
+
+        var operateur = window.prompt("inserer l'opérateur (+, -, * ou / )");
+
+        if (operateur == "+") {
+            document.write(parseInt(nbre2) + parseInt(nbre1));
+        } else {
+            if (operateur == "-") {
+                document.write(nbre1 - nbre2);
+            } else {
+                if (operateur == "*") {
+                    document.write("le resultat est " + (nbre1 * nbre2));
+                } else {
+                    if (operateur == "/" && nbre1 != 0) {
+                        document.write("le resultat est " + (nbre1 / nbre2));
+                    } else {
+                        document.write("nombre ou operateur faux")
+                    }
+                }
+
+            }
+        }
+    </script>
+</body>
+
+</html>

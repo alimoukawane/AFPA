@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercice</title>
+</head>
+
+<body>
+
+
+    <script>
+        var x;
+        var y;
+        var z;
+        x = window.prompt("inserer un nombre :");
+        y = window.prompt("inserer un mutiplicateur");
+
+        function produit() {
+
+
+            z = x * y;
+            return z;
+
+        }
+
+        function afficherImage() {
+
+            var i = "<img src= papillon.jpg>";
+
+
+            return i;
+
+        }
+        somme = produit();
+        image = afficherImage();
+
+        document.write(image + '<br/>' + ' le produit de ' + x + ' X ' + y + ' est égale à ' + somme);
+        console.log(image + '<br/>' + ' le produit de ' + x + ' X ' + y + ' est égale à ' + somme);
+    </script>
+</body>
+
+</html>

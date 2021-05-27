@@ -1,0 +1,17 @@
+.parent {
+    border: 5px black solid,
+    display: inline-block,
+   }
+   .box {
+    display: inline-block,
+    background: rgb(113,113,133),
+    width: 100px,
+    height: 100px,
+   }
+   #two {
+    top: 20px,
+  left: 20px,
+  background: #74CC42,
+  position: absolute,
+   }
+   

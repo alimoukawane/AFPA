@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMAIRES</title>
+</head>
+<body>
+    <form action="form.php" method="post"> 
+        <input type="text" name="nom"> 
+        <input type="text" name="prenom"> 
+        <input type="submit" value="Envoyer"> 
+        <br>
+        <br>
+        <br>
+
+        <label for="nom">Nom:</label><input type="text" name="nom" id="nom" size="50" maxlength="50" value="Dave LOPER">
+
+<br>
+<br>
+<textarea name="commentaire" rows="10" cols="50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis quis metus ornare semper. In vitae lacus ex. In elementum iaculis malesuada. Maecenas vulputate, erat id molestie dictum, diam dolor faucibus nisl, in pharetra sapien libero eget risus. Morbi vehicula aliquam placerat. Suspendisse mollis tempus dictum. Nullam suscipit nec massa eget viverra. Etiam feugiat facilisis est nec euismod. Quisque convallis, tortor sed placerat lacinia, elit nunc volutpat arcu, vel consequat velit libero at tortor. Suspendisse interdum lacus non felis bibendum facilisis. In sit amet enim mauris.</textarea>`
+<br>
+<br>
+<br>
+
+<select name="couleur"> 
+    <option>Bleu</option>
+    <option>Rouge</option>
+    <option>Vert</option>
+</select>   
+
+<br>
+<br>
+
+<label for="couleur">Choisissez votre couleur</label>
+<select id="couleur"> 
+    <option value="" selected>-</option>
+    <option value="Bleu">Bleu</option>
+    <option value="Rouge">Rouge</option>
+    <option value="Vert">Vert</option>
+</select>
+<br>
+<br>
+<br>
+<label for="couleur">Choisissez votre couleur</label>
+<select id="couleur" size="2"> 
+    <option value="">-</option>
+    <option value="Bleu">Bleu</option>
+    <option value="Rouge">Rouge</option>
+    <option value="Vert">Vert</option>
+    <option value="Jaune">Jaune</option>
+    <option value="Blanc">Blanc</option>
+</select>
+<br>
+<br>
+<br>
+
+<form action="destination.php" method="post" enctype="multipart/form-data"> 
+    <input type="file" name="fichier"> 
+    </form>
+
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice de formualire</title>
+</head>
+<body>
+
+    
+    * Ces zones sont obligatoires
+    <br>
+ <fieldset>
+        <legend>Coordonnées</legend>
+
+    <label for="nom">Nom*:</label><input type="text" name="nom" id="nom" size="20" maxlength="20" required ><br>
+
+
+<label for="Prénom">Prénom*:</label><input type="text" name="nom" id="nom" size="20" maxlength="20" required><br>
+
+<label for="Sexe">Sexe*:</label>
+<input type="radio" name="Sexe" value="Feminin"required> Feminin
+<input type="radio" name="Sexe" value="Masculin"required> Masculin<br>
+
+<label for="date"> Date de naissance*:</label><input type="date" name="ddn" id="date"required>
+
+
+<br>
+
+  
+    <label for=codepostal>Code postal*:</label><input id=codepostal name=codepostal type=text required><br>
+    <label for=adresse>Adresse:</label><input id=adresse name=adresse type=text ><br>
+    <label for=email requires> Email*:</label><input id=codepostal name=email type=email  value="dave.loper@afpa.fr"required><br>
+
+</fieldset>
+
+<fieldset>
+    <legend>Votre demande</legend>
+
+    <label for="sujet">Sujet*:</label> <select id="sujet"required> 
+    <option value=""  selected> choissez votre sujet</option>
+    <option value="sujet1">Mes commandes</option>
+    <option value="sujet2">Question sur un produit</option>
+    <option value="sujet3">Réclamation</option>
+    <option value="sujet4">Autres</option>
+
+</select>
+<br>
+<label for="w3review">Votre question*:</label>
+<textarea name="question" rows="10" cols="50"required></textarea><BR>
+    
+</fieldset>
+<form action="form.php" method="post"> 
+
+<input type="checkbox" name="accepttif" value="" required> * J'accepte le traitement informatique de ce formulaire <br>
+
+<input type="submit" value="Envoyer"> 
+<input type="reset" value="Annuler">
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

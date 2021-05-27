@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header" >
+            <div class="box"  ><img src="images/jarditou_logo.jpg" alt="jarditou_logo" id="logotop"  width="180px"></div>
+
+            <div class="textheader" ><p >Tout le jardin</p></div>
+            </div>
+        
+         
+
+
+     <p class="menutop">  
+    <a href="index01.html" title="index" id="index" >Accueil</a>
+    <a href="tableau.html" title="tableau"id="tableau">Tableau</a>
+    <a href="contact.html" title="contact"id="contact">Contact</a>
+     
+     
+</header>
+
+
+     <img src="images/promotion.jpg" alt=" jarditou_logo" id="jarditou_logo"  width="100%"><br>
+
+     <h1> Contact</h1> <br>
+     <hr>
+
+
+
+    
+    * Ces zones sont obligatoires
+    <br>
+   
+ <fieldset>
+        <legend>Coordonnées</legend>
+
+
+        
+        <form  name= "saisieContact" onsubmit="return validationForm()"> 
+
+
+    <label for="nom">Nom*:</label><input type="text" name="nom" id="nom" size="20" maxlength="20"  >
+    <p class="erreur" id="erreurNom"> </p>
+<br><br>
+
+
+
+<label for="prenom">Prénom*:</label><input type="text" name="prenom" id="prenom" size="20" maxlength="20" >
+<p class="erreur" id="erreurPrenom"> </p>
+<br><br>
+
+<label for="sexe"> Sexe*: </label>
+<input type="radio" name="sexe" id='sexF' value=0 checked > Feminin
+<input type="radio" name="sexe" id='sexeM'value=1 > Masculin<br><br>
+
+
+
+<label for="date"> Date de naissance*:</label> <input type="date" name="date" id="date" value=''><br>
+<p class="erreur" id="erreurDate"> </p>
+
+
+
+<br>
+
+  
+    <label for=codePostal>Code postal*:</label><input id=codePostal name=codePostal type=text >
+    <p class="erreur" id="erreurCodepostal"> </p>
+
+    <br><br>
+    <label for=adresse>Adresse:</label><input id=adresse name=adresse type=text >
+        <br><br>
+    <label for=email> Email*:</label> <input id=email name=email type=email  value="dave.loper@afpa.fr" >
+    <p class="erreur" id="erreurEmail"> </p>
+
+    <br><br>
+
+</fieldset>
+
+<fieldset>
+    <legend>Votre demande</legend><br>
+    
+    <label for="sujet">Sujet*:</label> <select id="sujet" > 
+        
+
+        <br><br>
+    <option value=""  selected> choissez votre sujet</option>
+    <option value="sujet1">Mes commandes</option>
+    <option value="sujet2">Question sur un produit</option>
+    <option value="sujet3">Réclamation</option>
+    <option value="sujet4">Autres</option>
+
+</select>
+<p class="erreur" id="erreurSujet"> </p>
+<br><br>
+<label for="question">Votre question*:</label>
+<textarea name="question" id="question" rows="10" cols="50" ></textarea>
+<p class="erreur" id="erreurQuestion"> </p>
+
+<br><br>
+    
+</fieldset>
+
+
+<input type="checkbox" id="accepter" name="accepter" value="" > * J'accepte le traitement informatique de ce formulaire 
+<p class="erreur" id="erreurAccepter"> </p>
+
+<br><br>
+
+<input type="submit" value="Envoyer"> 
+<input type="reset" value="Annuler">
+
+
+    </form>
+<!-- <script src="jarditou.js"> </script> -->
+<script>
+function validationForm()                                 
+         { 
+            //Valide le Nom 
+            var name = document.forms.saisieContact.nom,         
+             if (name.value == ""){ 
+                 document.getElementById('erreurNom').innerHTML="Veuillez entrer une info valide",  
+                 name.focus(), 
+                 return false, 
+             }else{
+                 document.getElementById('erreurNom').innerHTML="ok",
+                  
+             }
+  
+
+//  vALIDE PRENOM
+             var prenom = document.forms.saisieContact.prenom,         
+             if (prenom.value == ""){ 
+                 document.getElementById('erreurPrenom').innerHTML="Veuillez entrer un prénom valide",  
+                 prenom.focus(), 
+                 return false, 
+             }else{
+                 document.getElementById('erreurPrenom').innerHTML="ok",  
+
+             }
+         
+
+//date de naissance
+            var date = document.forms.saisieContact.date,         
+             if (date.value =="" ){ 
+                 document.getElementById('erreurDate').innerHTML="Veuillez entrer une date valide",  
+                 date.focus(), 
+                 return false, 
+             }else{
+                 document.getElementById('erreurDate').innerHTML="ok",  
+             }
+
+//cp Valide
+
+var codepostal = document.forms.saisieContact.codePostal,         
+             if (codePostal.value == ""){ 
+                 document.getElementById('erreurCodepostal').innerHTML="Veuillez entrer un code postal valide",  
+                 codePostal.focus(), 
+                 return false, 
+             }else{
+                 document.getElementById('erreurCodepostal').innerHTML="ok",  }
+
+//Validation email
+
+var email = document.forms.saisieContact.email,         
+             if (email.value == ""|| email.value== "dave.loper@afpa.fr"){ 
+                 document.getElementById('erreurEmail').innerHTML="Veuillez entrer une email valide",  
+                 email.focus(), 
+                 return false, 
+             }else{
+                 document.getElementById('erreurEmail').innerHTML="ok",  }
+
+
+//Valdation sujet
+var sujet = document.forms.saisieContact.sujet,         
+             if (sujet.value == ""){ 
+                 document.getElementById('erreurSujet').innerHTML="Veuillez selectionner un sujet valide",  
+                 sujet.focus(), 
+                 return false, 
+             }else{
+                 document.getElementById('erreurSujet').innerHTML="ok",  }
+
+
+
+//Validation question
+
+var question = document.forms.saisieContact.question,         
+             if (question.value == ""){ 
+                 document.getElementById('erreurQuestion').innerHTML="Veuillez entrer une question valide",  
+                 question.focus(), 
+                 return false, 
+             }else{
+                 document.getElementById('erreurQuestion').innerHTML="ok",  }
+
+
+//Validation traitement info
+
+var accepter = document.forms.saisieContact.accepter,         
+             if (accepter.checked === false){ 
+                 document.getElementById('erreurAccepter').innerHTML="Veuillez cocher cette case",  
+                 accepter.focus(), 
+                 return false, 
+             }else{
+                 document.getElementById('erreurAccepter').innerHTML="ok",  }
+
+
+         }
+
+</script>
+
+</body>
+</html>
+    
