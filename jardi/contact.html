@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid  ">
+        <header>
+            <div class="row">
+
+                <div class="col-8"><img src="public/images/jarditou_logo.jpg" alt="jarditou_logo" id="logotop" width="300"></div>
+                <div class=" col-4 text-nowrap d-none d-lg-block" aria-hidden="true" aria-hidden="true">
+                    <h1 class="m-3  d-inline-block">Tout le jardin</h1>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index01.html">Jarditou.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tableau.html">Tableau</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Formulaire</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Code promotion" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+                    </form>
+                </div>
+            </nav>
+
+
+
+
+            <img src="public/images/promotion.jpg" alt=" jarditou_logo" id="jarditou_logo" width="100%"><br>
+
+            <!--seconde navbar-->
+
+
+
+        </header>
+
+        <section>
+
+
+            * Ces zones sont obligatoires
+            <br>
+            <form action="form.php" method="post">
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+
+                    <div>
+                        <label for="nom">Nom* :</label><input class="form-control " type="text" name="nom" id="nom" size="10" maxlength="20" required><br>
+                    </div>
+                    <div>
+                        <label for=prenom>Prénom* :</label><input class="form-control" type="text" name="prenom" id="prenom" size="10" maxlength="20" required><br>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label" for="sexe"> Sexe*: </label><br>
+                        <input form type="radio" name="Sexe" value="Feminin" required> Feminin
+                        <input type="radio" name="Sexe" value="Masculin" required> Masculin
+                        <input type="radio" name="Sexe" value="Neutre" required> Neutre
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="date"> Date de naissance*:</label> <input class="form-control" type="date" name="ddn" id="date" required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for=codepostal>Code postal*:</label><input class="form-control" id="codepostal" name="codepostal" type="text" required>
+                    </div>
+                    <div>
+                        <label for=adresse>Adresse:</label><input class="form-control" id=adresse name=adresse type=text>
+                    </div>
+                    <div>
+                        <label for=email> Email*:</label> <input class="form-control" id=email name=email type=email value="dave.loper@afpa.fr" required><br>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Votre demande</legend>
+
+                    <div>
+                        <label for="sujet">Sujet*:</label> <select class="form-control" id="sujet" required> 
+    <option value=""  selected> choissez votre sujet</option>
+    <option value="sujet1">Mes commandes</option>
+    <option value="sujet2">Question sur un produit</option>
+    <option value="sujet3">Réclamation</option>
+    <option value="sujet4">Autres</option>
+
+
+</select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="question">Votre question*:</label>
+                        <textarea class="form-control" name="question" rows="10" cols="50" required></textarea>
+                        <BR>
+                    </div>
+                </fieldset>
+
+
+                <input type="checkbox" name="accepttif" value="" required> * J'accepte le traitement informatique de ce formulaire
+
+                <br>
+                <br>
+
+                <input class="bt btn-dark" type="submit" value="Envoyer">
+                <input class="bt btn-dark" type="reset" value="Annuler">
+
+
+
+            </form>
+            <br>
+
+        </section>
+
+
+        <footer>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Mentions légale<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Horaires<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Plan de site <span class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+
+    </div>
+    </nav>
+
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
